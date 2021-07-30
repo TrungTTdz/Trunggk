@@ -3,7 +3,6 @@ git clone     // git clone lấy từ trên mạng về
 git pull    // đồng bộ từ trên mạng về máy
 
 git add và git add .    //thêm vào máy
-
 git commit
 git push        // từ máy lên mạng
 
