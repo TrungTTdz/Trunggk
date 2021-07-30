@@ -76,6 +76,9 @@ BEGIN
                 write(f,j);
 
         close(f);
+        
+        // xin chao cac ban nha
+        
 
 
 
@@ -85,3 +88,4 @@ BEGIN
 
 
 END.
+// ao that day
