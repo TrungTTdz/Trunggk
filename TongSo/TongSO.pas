@@ -76,6 +76,9 @@ BEGIN
                 write(f,j);
 
         close(f);
+        
+        // xin chao cac ban nha
+        
 
 
 
