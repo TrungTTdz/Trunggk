@@ -15,3 +15,4 @@ begin
     end;
     for i:=1 to n do if b[i] then write('  ',a[i]);
 end.
+// bun ngu quá :)) hello
