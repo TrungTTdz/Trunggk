@@ -10,4 +10,6 @@ git log        // trạng thái file
 git log —decorate —graph —oneline
 :)) thu nha cac ban
 hey guy my name is
+trungk ahihih moaw
+xD ao that day
 
