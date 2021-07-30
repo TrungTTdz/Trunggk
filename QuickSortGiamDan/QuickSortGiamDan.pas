@@ -56,7 +56,7 @@ BEGIN
         writeln('Sau khi sap xep:');
 
         for i:=n to 1 do write(a[i]:3);
-
+// aihihi
 
         readln
 
