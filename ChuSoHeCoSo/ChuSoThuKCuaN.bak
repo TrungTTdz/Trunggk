@@ -1,0 +1,24 @@
+program ChuSoThuKCuaN;
+
+uses crt;
+var
+        n:String;
+        k:integer;
+
+BEGIN
+
+        clrscr;
+
+        write('Nhap n:');readln(n);
+
+        write('Nhap k:');readln(k);
+
+         write(n[k]);
+
+       // if(pos(n[k],n)) then write(n[k]) else write(-1);
+
+
+
+        readln
+END.
+

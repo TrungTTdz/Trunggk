@@ -1,0 +1,24 @@
+program GiaiThuaKep;
+
+uses crt;
+var
+        n,gt:integer;
+
+BEGIN
+        clrscr;
+        write('Nhap n:');readln(n);
+
+        gt:=1;
+
+        while n > 0 do
+        begin
+                gt:=gt*n;
+                n:=n-2;
+
+
+        end;
+
+        write(n,'!!=',gt);
+        readln
+END.
+

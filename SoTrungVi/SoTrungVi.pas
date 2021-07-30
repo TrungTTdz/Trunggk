@@ -1,0 +1,66 @@
+program SoTrungVi;
+uses crt;
+const
+        INPUT = 'SoTrungVi\Input.txt';
+        OUTPUT = 'SoTrungVi\Output.txt';
+type mang = array [1..100] of integer;
+var
+        a,kq,m:mang;
+        n:integer;
+        i,j,k,l,tam,g:integer;
+        f:text;
+
+procedure Sort(var a:mang);
+var
+        i,j,tam:integer;
+BEGIN
+        for i:=1 to n-1 do
+                for j:=i+1 to n do
+                if (a[i] > a[j]) then
+                begin
+                        tam:=a[i];
+                        a[i]:=a[j];
+                        a[j]:=tam;
+
+                end;
+
+END;
+
+
+BEGIN
+
+        clrscr;
+
+        assign(f,INPUT);
+        reset(f);
+
+                readln(f,n);
+
+              while not(EOF(f)) do
+                begin
+                        for j:=1 to n do read(f,a[j]);
+                        Sort(a);
+                        inc(g);
+                        m[g]:=a[(1+n) div 2];
+                        readln(f);
+                        writeln;
+
+
+                end;
+
+
+
+
+
+        close(f);
+
+        assign(f,OUTPUT);
+        rewrite(f);
+        Sort(m);
+        write(f,m[(1+n) div 2]);
+        close(f);
+
+
+        readln
+
+END.

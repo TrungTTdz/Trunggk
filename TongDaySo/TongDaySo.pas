@@ -1,0 +1,97 @@
+program TongDaySo;
+uses crt;
+const
+        FI = 'TongDaySo\INP.txt';
+        FO = 'TongDaySo\OUT.txt';
+var
+        n,k,i,j:longint;
+        a,p,q,sum:array[0..100000] of integer;
+
+
+
+procedure ReadData;
+var
+        f:text;
+        longint:integer;
+BEGIN
+        assign(f,FI);
+        reset(f);
+
+        readln(f,n,k);
+        for i:=1 to n do read(f,a[i]);
+        readln(f);
+
+        i:=0;
+
+        while not EOF(f) do
+        begin
+                while not EOLN(f) do
+                begin
+                        inc(i);
+                        read(f,p[i],q[i]);
+
+                end;
+
+                readln(f);
+
+        end;
+
+        close(f);
+
+END;
+
+procedure WriteData;
+var
+        f:text;
+BEGIN
+        assign(f,FO);
+        rewrite(f);
+
+        for i:=1 to k do
+        begin
+                writeln(f,sum[q[i]]-sum[p[i]]+a[p[i]]);
+        end;
+        close(f);
+END;
+BEGIN
+        CLRSCR;
+
+        ReadData;
+
+        for i:=1 to n do
+        sum[i]:=sum[i-1]+a[i];
+
+        WriteData;
+
+        readln
+End.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

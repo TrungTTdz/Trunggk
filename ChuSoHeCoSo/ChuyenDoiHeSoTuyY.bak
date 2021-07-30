@@ -1,0 +1,54 @@
+program DoiCoSo;
+uses crt;
+var n,s:longint;
+function Doi(n:longint;s:byte):string;
+var cs:array[0..100] of char;
+    i:integer;
+    ch:char;
+    tam:String;
+BEGIN
+
+        {Khoi tao cac chu so tu 0 den 9}
+        i:=0;
+        ch:='0';
+        while i<=9 do
+        begin
+                cs[i]:=ch;
+                inc(i);
+                inc(ch);
+        end;
+
+        {Khoi tao cac chu so tu A den Z}
+        i:=10;
+        ch:='A';
+        while ch < 'Z' do
+        begin
+                cs[i]:=ch;
+                inc(i);
+                inc(ch);
+
+        end;
+
+        tam:='';
+        while n<>0 do
+        begin
+                tam:=cs[n mod s]+tam;
+                n:=n div s;
+
+        end;
+
+        exit(Tam);
+
+
+END;
+
+BEGIN
+        clrscr;
+
+        write('Nhap n:');readln(n);
+        write('Doi sang co so:');readln(s);
+        write(Doi(n,s));
+
+        readln
+END.
+

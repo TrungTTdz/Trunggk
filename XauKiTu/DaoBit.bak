@@ -1,0 +1,23 @@
+program DaoBit;
+uses crt;
+var
+        s:string;
+        i,b,n:byte;
+function DaoBit(c:char):char;
+var
+        n,i,d,bitcuoi,Mask:byte;
+BEGIN
+        n:=ord(c);
+        write(n);
+
+END;
+BEGIN
+        clrscr;
+
+        write('Nhap xau:');readln(s);
+
+
+        DAoBit('a');
+        readln
+
+END.

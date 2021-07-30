@@ -1,0 +1,45 @@
+program DoiCoSoMuoi;
+uses crt;
+var n:string;
+cs:byte;
+
+function Doi:string;
+var
+        cs:array[0..100] of char;
+        i,j:integer;
+        tam,s:string;
+        c:char;
+
+BEGIN
+        //Gan 0-9 va A-Z vao mang
+        i:=0;
+
+        for c:='0' to '9' do
+        begin
+                cs[i]:=c;
+                write(c[i]:3);
+                inc(i);
+        end;
+
+        i:=10;
+
+        for c:='A' to 'Z' do
+        begin
+                cs[i]:=c;
+                inc(i);
+        end;
+
+
+
+
+
+
+
+END;
+
+BEGIN
+        clrscr;
+        Doi;
+        readln
+END.
+

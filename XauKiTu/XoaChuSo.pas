@@ -1,0 +1,27 @@
+program XoaChuSo;
+
+uses crt;
+var
+        s:String;
+        i:byte;
+
+        //tra ve so dau chuoi
+function So(s:string):char;
+begin
+        for i:=1 to length(s) do
+        if(s[i] >= '0' ) and (s[i] <='9') then exit(s[i]);
+
+end;
+
+BEGIN
+
+        clrscr;
+
+        write('Nhap s:');readln(s);
+
+        while(pos(so(s),s)) <> 0 do delete(s,pos(so(s),s),1);
+        write(s);
+
+        readln
+END.
+

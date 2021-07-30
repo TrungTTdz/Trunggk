@@ -1,0 +1,26 @@
+program PTBacHai;
+uses crt;
+var
+    a,b,c,delta:real;
+
+BEGIN
+        clrscr;
+
+        writeln('GIAI PT AX*X+BX+C=0');
+
+        write('Nhap a:');readln(a);
+        write('Nhap b:');readln(b);
+        write('Nhap c:');readln(c);
+
+        delta:=sqr(b)-4*a*c;
+
+        if(delta < 0) then write('Phuong trinh vo nghiem') else
+        if(delta = 0) then write('Phuong trinh co nghiem kep x1 = x2 =',-b/2*a:0:3) else
+        write('Phuong trinh co 2 nghiem phan biet x1 =',(-b+sqrt(delta))/(2*a):0:3,' x2=',(-b-sqrt(delta))/(2*a):0:3);
+
+
+
+
+        readln
+
+END.

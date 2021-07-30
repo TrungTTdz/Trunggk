@@ -1,0 +1,19 @@
+program PTMotAn;
+uses crt;
+var
+        a,b,x:real;
+BEGIN
+        clrscr;
+
+        WRITELN('PHUONG TRINH AX+B = 0');
+
+        write('Nhap a:');readln(a);
+        write('Nhap b:');readln(b);
+
+        x:=-b/a;
+
+        write('Nghiem cua phuong trinh la',x);
+
+        readln
+
+END.

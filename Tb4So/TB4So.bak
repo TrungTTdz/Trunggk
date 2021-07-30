@@ -1,0 +1,17 @@
+program TB_4so;
+uses crt;
+var
+        a,b,c,d:real;
+BEGIN
+        clrscr;
+
+        write('Nhap so thu 1:');readln(a);
+        write('Nhap so thu 2:');readln(b);
+        write('Nhap so thu 3:');readln(c);
+        write('Nhap so thu 4:');readln(d);
+
+        write('Trung binh 4 so:',(a+b+c+d)/4:0:2);
+
+        readln
+
+END.
