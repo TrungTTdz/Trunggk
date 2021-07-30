@@ -3,7 +3,7 @@ uses crt;
 
 var
         a:array [1..100] of integer;
-        i:integer;
+        i,n:integer;
 
 procedure QuickSort(left,right:integer);
 var
@@ -41,20 +41,21 @@ END;
 
 BEGIN
         clrscr;
+        write('nhap n');
+        readln(n);
 
-        for i:=1 to 10 do
+        for i:=1 to n do
         begin
-                a[i]:=i;
-                write(a[i]:3);
+                readln(a[i])
         end;
 
 
-        QuickSort(1,10);
+        QuickSort(1,n);
 
         writeln;
         writeln('Sau khi sap xep:');
 
-        for i:=1 to 10 do write(a[i]:3);
+        for i:=n to 1 do write(a[i]:3);
 
 
         readln
