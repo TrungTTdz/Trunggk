@@ -1,11 +1,11 @@
 uses crt;
 var f:text;
     i:integer;
-    a:array[1..50] of string;
+    a:array[1..140] of string;
 begin
-assign(f,'bai1.inp');
+assign(f,'ascii-art.txt');
 reset(f);
-for i:=1 to 50 do
+for i:=3 to 80 do
  
  begin
   readln(f,a[i]);
@@ -15,4 +15,5 @@ for i:=1 to 50 do
  end;
  readln;
   end.
+
 
