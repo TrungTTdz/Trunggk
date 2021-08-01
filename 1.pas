@@ -3,9 +3,9 @@ var f:text;
     i:integer;
     a:array[1..140] of string;
 begin
-assign(f,'ascii-art.txt');
+assign(f,'bai1.inp');
 reset(f);
-for i:=3 to 80 do
+for i:=1 to 50 do
  
  begin
   readln(f,a[i]);
