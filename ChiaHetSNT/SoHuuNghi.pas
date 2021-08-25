@@ -23,25 +23,19 @@ BEGIN
 
         write('Cac cap so huu nghi');
 
-        for i:=1 to 1000 do
+        for i:=1 to 10 do
         begin
                 tam:=TongUoc(i);
                 write(tam);
 
                 if(TongUoc(tam) = i) then
                 begin
+                        writeln('  ',i:10);
                         inc(dem);
                 end;
 
 
         end;
 
-        write(TongUoc(48),'-',75);
-
-        if(dem = 0) then write(' Ko co');
-
-
-
-        readln
 END.
 
